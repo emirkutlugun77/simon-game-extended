@@ -1,0 +1,141 @@
+body {
+    text-align: center;
+    background-color: #011f3f;
+}
+
+#level-title {
+    font-family: "Press Start 2P", cursive;
+    font-size: 2rem;
+    color: #fef2bf;
+    display: inline block;
+}
+
+.tip-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tip-title {
+    font-family: "Press Start 2P", cursive;
+    font-size: 1rem;
+    color: #fef2bf;
+    display: inline block;
+}
+
+.container-header {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip-box {
+    justify-content: end;
+    align-items: flex-end;
+    width: 150px;
+    height: 450px;
+    background-color: aliceblue;
+}
+
+.grid-container {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "row1 row1 hint-box" "row2 row2 hint-box" ". . hint-box";
+    align-items: center;
+    justify-items: center;
+}
+
+.hint-box {
+    grid-area: hint-box;
+    width: 150px;
+    height: 400px;
+    justify-content: start;
+    align-items: start;
+}
+
+.row1 {
+    grid-area: row1;
+    width: 600px;
+    height: 150px;
+}
+
+.row2 {
+    grid-area: row2;
+    width: 600px;
+    height: 150px;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.empty {
+    width: 5%;
+}
+
+.hint-button {
+    background-image: url("images/bulb-icon.png");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 30px;
+}
+
+.btn {
+    margin: 15px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border: 10px solid black;
+    border-radius: 20%;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.tip-box-colored {
+    width: 60px;
+    height: 60px;
+    margin: 5%;
+    border: 10px solid black;
+    border-radius: 20%;
+}
+
+.invis {
+    opacity: 0;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}

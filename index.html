@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="row">
+        <div>
+            <h1 id="level-title">Press A Key to Start</h1>
+        </div>
+
+        <div class="tip-div">
+            <h6 id="tip-title">Remaining Tip: 3 </h6>
+            <div class="empty"></div>
+            <div class="hint-button"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="hint-box">
+                <ul style="list-style-type:none;">
+                    <li>
+                        <div class="tip-box-colored green invis" id="green-tip"></div>
+                    </li>
+                    <li>
+                        <div class="tip-box-colored red invis" id="red-tip"></div>
+                    </li>
+                    <li>
+                        <div class="tip-box-colored yellow invis" id="yellow-tip"></div>
+                    </li>
+                    <li>
+                        <div class="tip-box-colored blue invis" id="blue-tip"></div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="row1">
+                <div type="button" id="green" class="btn green">
+
+                </div>
+
+                <div type="button" id="red" class="btn red"></div>
+                <div class="row2">
+                    <div type="button" id="yellow" class="btn yellow">
+
+                    </div>
+                    <div type="button" id="blue" class="btn blue">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>
